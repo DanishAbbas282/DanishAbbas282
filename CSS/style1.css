@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.header {
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/dope-masters-7VLFQGMtUfU-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+}
+
+.logo-M {
+    width: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-M:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: gold;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: gold;
+    display: block;
+    margin: auto;
+    transition: 0.4s ease;
+    text-decoration: none;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+.DOWNLOAD1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.DOWNLOAD1 input{
+    margin: 4px;
+    padding: 3px;
+}
+.textarea{
+    margin: 4px;
+    padding: 3px;
+    font-size: 15px;
+    width: 100%;
+    font-family: sans-serif;
+}
+.text-box {
+    width: 90%;
+    color: rgb(241, 209, 26);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+    font-style: italic;
+    color: gold;
+}
+
+.text-box p {
+    margin: 10px 0.40px;
+    font-size: 14px;
+    color: goldenrod;
+    font-style: inherit;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: ivory;
+    border: 1px solid gold;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid goldenrod;
+    background: gold;
+    transition: 1s;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 790px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links ul li a {
+        color: black;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: rgb(240, 191, 66);
+        height: 80vh;
+        width: 250px;
+        top: 0;
+        right: -250px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: rgb(14, 240, 14);
+        margin: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    .logo-M {
+        display: none;
+    }
+
+}
+
+/*----- Download -----*/
+.Download {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.heading-r {
+    font-size: 36px;
+    font-weight: 600;
+    color: rgb(247, 224, 22);
+}
+
+p {
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Download-col {
+    flex-basis: 31%;
+    background: gold;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3 {
+    font-style: italic;
+    color: rgb(255, 38, 0);
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.Download-col:hover {
+    box-shadow: 0 0 20px 0px rgba(4, 9, 30, 0.7);
+}
+
+@media(max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/*------ Website -------*/
+.Website {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.Website-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    height: 70vh;
+}
+
+.Website-col img {
+    width: 100%;
+    height: 70vh;
+    display: block;
+}
+
+.layer {
+    width: 100%;
+    background-size: cover;
+    z-index: 0;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(241, 226, 10, 0.7);
+}
+
+.layer h2 {
+    width: 100%;
+    font-weight: 500;
+    color: rgb(255, 38, 0);
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    font-style: italic;
+    font-family: bold;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h2 {
+    bottom: 49%;
+    opacity: 1;
+
+}
+
+/*------- Danish ------*/
+.Danish {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.Danish-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.Danish-col img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+/*--------Download 4k---------*/
+.DOWNLOAD1 {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(102, 34, 34, 0.7)), url(../images/steve-johnson-_0iV9LmPDn0-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.DOWNLOAD h1 {
+    color: rgb(255, 38, 0);
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.icons {
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    padding: 12px;
+    size: 30px;
+}
+
+.icons i {
+    size: 30px;
+    margin: 6px;
+    padding: 7px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.icons i:hover {
+    background-color: red;
+}
